@@ -18,16 +18,16 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="btree.h">
+    <ClInclude Include="..\Headers\btree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="buffer.h">
+    <ClInclude Include="..\Headers\buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="list.h">
+    <ClInclude Include="..\Headers\list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stack.h">
+    <ClInclude Include="..\Headers\stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

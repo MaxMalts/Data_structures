@@ -251,7 +251,7 @@ int NodesOutput(FILE* gvFile, node_t* node) {
 #ifdef _DEBUG
 	fprintf(gvFile, "\t%d [label=\"{%p|%p|%s|{%p|%p}}\"]\n", (int)node, node, node->parent, valueS, node->left, node->right);
 #else
-	fprintf(gvFile, "\t%d [label=\"%s\"]", (int)node, sValue);
+	fprintf(gvFile, "\t%d [label=\"%s\"]", (int)node, valueS);
 #endif
 	free(valueS);
 
@@ -300,7 +300,7 @@ int CreateTreeImage(tree_t* tree, const char foutName[], const char gvFileName[]
 	fprintf(gvFile, "\tnode [shape=record]\n\n");
 	fprintf(gvFile, "\tformat_node [label=\"{adress|parent|value|{left|right}}\"]\n\n");
 #else
-	fprintf(ftemp, "digraph {\n", tree->name);
+	fprintf(gvFile, "digraph {\n");
 #endif
 
 	NodesOutput(gvFile, tree->root);
